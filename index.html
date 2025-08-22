@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <div class="container">
@@ -75,7 +76,9 @@
             </main>
         </header>
         <section class="main-content">
-            <div class="cards">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"> <div class="cards">
                 <div class="text-right">
                     <div class="right-top"> 
                     <h1>Всегда свежие <br> молочные продукты</h1>
@@ -89,7 +92,70 @@
                     <img src="./img/Rectangle.png" alt="">
                 </div>
             </div>
+            </div>
+                  <div class="swiper-slide"> <div class="cards">
+                <div class="text-right red">
+                    <div class="right-top"> 
+                    <h1>Всегда свежие <br> молочные продукты</h1>
+                    <p>Только качественные товары, за <br> которыми мы всегда следим</p>
+                </div>
+                <div class="right-bottom">
+                    <button class="btn1">Подробнее</button>
+                </div>  
+                </div>
+                <div class="img-left">
+                    <img src="./img/Rectangle.png" alt="">
+                </div>
+            </div>
+            </div>
+                  <div class="swiper-slide"> <div class="cards">
+                <div class="text-right">
+                    <div class="right-top"> 
+                    <h1>Всегда свежие <br> молочные продукты</h1>
+                    <p>Только качественные товары, за <br> которыми мы всегда следим</p>
+                </div>
+                <div class="right-bottom">
+                    <button class="btn1">Подробнее</button>
+                </div>  
+                </div>
+                <div class="img-left">
+                    <img src="./img/Rectangle.png" alt="">
+                </div>
+            </div>
+            </div>
+                  <div class="swiper-slide"> <div class="cards">
+                <div class="text-right">
+                    <div class="right-top"> 
+                    <h1>Всегда свежие <br> молочные продукты</h1>
+                    <p>Только качественные товары, за <br> которыми мы всегда следим</p>
+                </div>
+                <div class="right-bottom">
+                    <button class="btn1">Подробнее</button>
+                </div>  
+                </div>
+                <div class="img-left">
+                    <img src="./img/Rectangle.png" alt="">
+                </div>
+            </div>
+            </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
         </section>
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 </html>
