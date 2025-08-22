@@ -75,10 +75,73 @@
 .bars {
     display: none;
 }
+.side-menu {
+    width: 100%;
+}
+.site-main {
+    width: 100%;
+    display: flex;
+}
+.side-menu .menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+.menu .menu-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8rem;
+}
+.menu .menu-ul li {
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+.menu .menu-ul .green a {
+    color: green;
+    font-weight: 600;
+}
+.menu .menu-ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 0.5rem;
+    color: black;
+}
+.menu-shop {
+    padding: 8px 10px;
+    background-color: #46c578;  
+    border-radius: 10px;
+    color: white;
+}
+.menu-shop a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    gap: 0.5rem;
+}
+.shop-box {
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: #74d699;
+}
 @media(max-width:1251px) {
     .container {
         width: 100%;
         padding: 0 20px;
+    }
+}
+@media(max-width:996px) {
+    .menu-item {
+        display: none;
+    }
+    .green {
+        display: block;
     }
 }
 @media(max-width:984px) {
